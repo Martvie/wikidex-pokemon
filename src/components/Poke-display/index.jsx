@@ -1,4 +1,5 @@
 import { PokeTypes } from "../Poke-types";
+import { Button } from "../Button";
 
 import {
     Caracteristicas,
@@ -9,7 +10,6 @@ import {
     InfoContainer,
     Name,
     Options,
-    Button,
 } from "./styles";
 
 const PokeDisplay = ({ image, name, height, weight, save, more, types }) => {
@@ -19,8 +19,8 @@ const PokeDisplay = ({ image, name, height, weight, save, more, types }) => {
                 <Image src={image} />
             </ImageContainer>
             <Options>
-                <Button onClick={more}> Saiba Mais</Button>
-                <Button onClick={save}> Salvar</Button>
+                <Button onClick={more} name={"Saiba Mais"}/> 
+                <Button onClick={save} name= {"Salvar"}/> 
             </Options>
             <InfoContainer>
                 <Name>{name}</Name>

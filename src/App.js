@@ -1,14 +1,19 @@
 import { Home } from "./pages/home";
-import GlobalStyles from "./global";
-import { PokeTypes } from "./components/Poke-types";
+import GlobalStyles from "./styles/global";
+import { MyThemeProvider, Theme } from "./contexts/themeContext";
 
 function App() {
   return (
-    <div className="App">
-      <GlobalStyles />
-      <Home/>
-  
-    </div>
+    <MyThemeProvider>
+      <Theme>
+        <div className="App">
+
+          <GlobalStyles />
+          <Home />
+
+        </div>
+      </Theme>
+    </MyThemeProvider>
   );
 }
 

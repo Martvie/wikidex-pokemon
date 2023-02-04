@@ -5,7 +5,7 @@ export const DisplayContainer = styled.div`
     height: 30rem;
     margin: 1rem;
 
-    background-color: #fd0100;
+    background-color:${(props) => props.theme.pokedisplay.main_color} ;
     border-radius: 1rem;
     box-shadow: 16px 22px 10px 0px rgba(0,0,0,0.1);
     
@@ -13,6 +13,7 @@ export const DisplayContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    color:${(props) => props.theme.color};
 `
 
 export const ImageContainer = styled.div`
@@ -20,7 +21,7 @@ export const ImageContainer = styled.div`
     width: 70%;
     margin: 0.5rem;
 
-    background: #FFFFF0;
+    background: ${(props) => props.theme.pokedisplay.image_container};
     
     border: 0.5rem solid #000000;
     border-radius: 1rem;
@@ -41,7 +42,7 @@ export const InfoContainer = styled.p`
     border-radius: 1rem;
     font-family: 'Adamina', serif;
 
-    background: #e30613;
+    background: ${(props) => props.theme.pokedisplay.second_color};
     
 `
 
@@ -79,16 +80,4 @@ export const Options = styled.div`
 
     display: flex;
     justify-content: space-evenly;
-`
-export const Button = styled.button`
-    height: 2rem;
-    width: 4.5rem;
-
-    border: 0;
-    border-radius: 1rem;
-
-    &:hover{
-        cursor: pointer;
-        opacity: 0.5;
-    }
 `
