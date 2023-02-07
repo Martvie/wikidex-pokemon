@@ -25,7 +25,7 @@ const Home = () => {
     };
 
     const handleAddPokemon = () => {
-        if (pokeList.length < 6) {
+        if (pokeList.length < 10) {
             const {stats, types, spriteStatic, id} = pokemon;
             const data = {stats, types, spriteStatic, id};
             if (data.id) {
@@ -39,7 +39,7 @@ const Home = () => {
             }
             alert("Esse pokemon já consta na lista!");
         } else {
-            alert("Sua lista deve ter um máximo de 6 pokemons!");
+            alert("Sua lista deve ter um máximo de 10 pokemons!");
         }
     };
 

@@ -23,7 +23,7 @@ export const Column = styled.div`
     &:last-child{
         width: 100%;
         justify-content: flex-start;
-        align-content: flex-start;
+        align-content: center;
         flex-wrap: wrap;
     }
 `

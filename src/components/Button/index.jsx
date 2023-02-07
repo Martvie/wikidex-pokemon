@@ -5,5 +5,7 @@ const Button =({name, onClick}) =>{
         <ButtonContainer onClick={onClick}>{name}</ButtonContainer>
     )
 }
-
+Button.defaultProps = {
+    name: "button",
+};
 export {Button}

@@ -14,7 +14,6 @@ const PokeCard = ({knowMore, handleRemoveFromList, image, hp, atk, def, id, back
             <PokeInfo>
             <Image src={image}/>
                 <OptionsContainer>
-                    <Option onClick={knowMore}>Mais</Option>
                     <Option onClick={handleRemove}>Remover</Option>
                 </OptionsContainer>
             </PokeInfo>

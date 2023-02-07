@@ -19,7 +19,6 @@ const PokeDisplay = ({ image, name, height, weight, save, more, types }) => {
                 <Image src={image} />
             </ImageContainer>
             <Options>
-                <Button onClick={more} name={"Saiba Mais"}/> 
                 <Button onClick={save} name= {"Salvar"}/> 
             </Options>
             <InfoContainer>

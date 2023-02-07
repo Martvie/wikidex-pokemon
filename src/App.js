@@ -1,4 +1,4 @@
-import { Home } from "./pages/home";
+import { Home } from "./pages/Home";
 import GlobalStyles from "./styles/global";
 import { MyThemeProvider, Theme } from "./contexts/themeContext";
 
