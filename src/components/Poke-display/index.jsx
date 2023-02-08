@@ -19,17 +19,18 @@ const PokeDisplay = ({ image, name, height, weight, save, more, types }) => {
                 <Image src={image} />
             </ImageContainer>
             <Options>
-                <Button onClick={save} name= {"Salvar"}/> 
+                <Button onClick={save} name={"Salvar"} />
             </Options>
             <InfoContainer>
                 <Name>{name}</Name>
                 <Descritor>
-                    Tipos:  
-                      
-                    {types[0]?  <PokeTypes pokeType={types[0].type.name} />: null}
-                    {types[1]?  <PokeTypes pokeType={types[1].type.name} />: null}
-                
-                    
+                    Tipos:
+                    {types[0] ? (
+                        <PokeTypes pokeType={types[0].type.name} />
+                    ) : null}
+                    {types[1] ? (
+                        <PokeTypes pokeType={types[1].type.name} />
+                    ) : null}
                 </Descritor>
                 <Caracteristicas>
                     <Descritor>Altura: {height / 10}m</Descritor>

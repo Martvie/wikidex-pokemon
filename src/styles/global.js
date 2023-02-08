@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import background from "../images/background.jpg"
+
 
 export default createGlobalStyle`
     *{
@@ -17,7 +17,8 @@ export default createGlobalStyle`
 
         height: 100vh;
 
-        background: url(${background});
+        background: ${(props) => props.theme.background};
+        background-color: ${(props) => props.theme.backgroundColor};
         background-repeat: no-repeat;
         background-size: cover;
     }

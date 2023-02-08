@@ -9,6 +9,10 @@ export const MainContent = styled.main`
 
     display:  flex;
 
+    @media (max-width: 680px) {
+    flex-direction: column;
+  }
+
 `
 
 export const Column = styled.div`
@@ -25,5 +29,9 @@ export const Column = styled.div`
         justify-content: flex-start;
         align-content: center;
         flex-wrap: wrap;
-    }
+        
+        @media (max-width: 680px) {
+            justify-content: center;
+        }
+}
 `

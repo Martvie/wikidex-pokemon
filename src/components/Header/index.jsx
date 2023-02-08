@@ -24,7 +24,7 @@ const Header = ({onClick, value, onChange}) => {
                 offColor={"#808080"}
                 onColor={"#a6a6a6"}
                 uncheckedIcon={false}
-                heckedIcon={false}
+                checkedIcon={false}
                 height={20}
                 handleDiameter={25}
             />

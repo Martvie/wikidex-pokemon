@@ -78,9 +78,12 @@ const Home = () => {
                                 background={poke.types[0].type.name}
                                 types={poke.types}
                                 id={poke.id}
+                                key={poke.id}
                                 handleRemoveFromList={handleRemoveFromList}
+                                
                             />
-                        ))}
+                        ))
+                        }
                     </Column>
                 ) : null}
             </MainContent>
