@@ -8,8 +8,8 @@ Caso deseje você pode testar esse projeto em produção pode fazer [clicando aq
 ## Imagens do projeto
 
 <p align="center">
+<img src="./src/images/screenshot.png">
 <img src="./src/images/screenshot1.png">
-<img src="./src/images/screenshot2.png">
 </p>
 
 
