@@ -26,9 +26,10 @@ Nesse projeto você pode:
 - Salvar uma lista de pokemons
 - Alternar entre tema claro e escuro
 
-### Funcionalidades Futuras
+### Funcionalidades e Modificações Futuras
 
 Como mencionei ainda pretendo adicionar umas funcionalidades nesse projeto, meus planos até então são de adicionar:
+ * Converter para TypeScript
  * Salvar o tema escolhido no localStorage
  * Página com mais informações de um pokemon selecionado
  * Navegação Usando o **React Router Dom**

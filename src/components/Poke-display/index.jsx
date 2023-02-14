@@ -25,12 +25,11 @@ const PokeDisplay = ({ image, name, height, weight, save, more, types }) => {
                 <Name>{name}</Name>
                 <Descritor>
                     Tipos:
-                    {types[0] ? (
-                        <PokeTypes pokeType={types[0].type.name} />
-                    ) : null}
-                    {types[1] ? (
-                        <PokeTypes pokeType={types[1].type.name} />
-                    ) : null}
+
+                    {types.map((types) => {
+                        return <PokeTypes pokeType={types.type.name} />;
+                    })}
+
                 </Descritor>
                 <Caracteristicas>
                     <Descritor>Altura: {height / 10}m</Descritor>

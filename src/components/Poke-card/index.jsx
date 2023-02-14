@@ -22,8 +22,9 @@ const PokeCard = ({knowMore, handleRemoveFromList, image, hp, atk, def, id, back
                 <Line>ATK: <StatsAtk atk={atk}/></Line>
                 <Line>DEF: <StatsDef def={def}/></Line>
                 <Line>Types
-                    {types[0]?  <PokeTypes variant={"small"} pokeType={types[0].type.name} />: null}
-                    {types[1]?  <PokeTypes variant={"small"} pokeType={types[1].type.name} />: null}
+                    {types.map((types) => {
+                        return <PokeTypes variant={"small"} pokeType={types.type.name} />;
+                    })}
                 </Line>
                  </StatsContainer>
         </CardContainer>
